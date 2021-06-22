@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Página Principal</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+         
+
+        <!--Bootstrap CSS LOCAL
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        -->
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        
+        <!--[if lt IE 9]>
+	        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+    <body class="gradiente">
+        
+         <!-- Conteúdo do cabeçalho-->
+         <header class="container2-padrao">
+
+            <h1 class="logotipo"><a href="index.html"><img src="img/logo.png" alt="Mirror Fashion" title="Mirror Fashion"></a></h1>
+
+            <p class="sacola">Nenhum item na Sacola de compras</p>
+
+            <div class="menu-opcoes">
+                <ul>
+                    <li><a href="index.html" class="link-ativo">Principal</a></li>
+                    <li><a href="#">Lista de desejos</a></li>
+                    <li><a href="#">Cartão fidelidade</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- FIM Conteúdo do cabeçalho-->
+        
+        <!-- Conteúdo principal-->
+        <main id="conteudo" class="container2-padrao gradiente">
+             <!-- Área  principal da página-->
+            <div id="principal">
+                <div class="container2-padrao paineis">
+                    <div class="jumbotron jumbotron-fluid gradiente">
+                        <div class="container">
+                        <h1 class="display-4">Finalização da Compra</h1>
+                        <p class="lead">Estamos quase lá! Agora realizaremos o pagamento de suas compras.</p>
+                        </div>
+                    </div>
+                    
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="E-mail" required>
+                            <div class="valid-feedback">
+                                Tudo certo!
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputPassword4">Senha</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress">Endereço</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="Informe seu endereço" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Endereço 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+                        </div>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <label for="inputCity">Cidade</label>
+                            <input type="text" class="form-control" id="inputCity" required>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputEstado">Estado</label>
+                            <select id="inputEstado" class="form-control" required>
+                              <option value="">Escolher...</option>
+                              <option value="1">...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-2">
+                            <label for="inputCEP">CEP</label>
+                            <input type="text" class="form-control" id="inputCEP" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                            <label class="form-check-label" for="gridCheck">
+                              Aceitar os <a href="#" data-toggle="modal" data-target="#ModalLongoExemplo">termos e condições da Mirror</a> Fashion
+                            </label>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                      </form>
+                      <!-- Modal -->
+                      <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalLongoExemplo">Termos e Condições</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                Texto do Modal
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- FIM do Conteúdo principal-->
+
+        <!-- Conteúdo do rodapé-->
+        <footer id="rodape">
+            <section class="container2-padrao">
+                <img src="img/logo-rodape.png" alt="logo-rodape.png"> 
+                &copy copyright Mirror Fashion 2021    
+                <ul class="redes-sociais">
+                    <li><a href="https://plus.google.com">Google +</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                </ul>
+            </section>
+        </footer>
+        <!-- FIM do Conteúdo do rodapé--> 
+    </body>
+    <!-- Bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+    <!--Bootstrap Local
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    -->
+
+    <script>
+        // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+            var forms = document.getElementsByClassName('needs-validation');
+            // Faz um loop neles e evita o envio
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+    </script>
+</html>
+
